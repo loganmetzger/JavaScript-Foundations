@@ -103,7 +103,9 @@ For example, variableInterestRate(200000, 0.04, 30) should console.log:
 "{Name}, with an interest rate of 0.06, your monthly rate is $1199"
 */
 
-
+for (I = 0.02, I > 0.06, I + 0.005) {
+    console.log(name + `, with an interest rate of ` I `your monthly rate is $` + parameterRate(200000, I, 360));
+}
 
 
 // 🌟🌟🌟 STRETCH 🌟🌟🌟//
