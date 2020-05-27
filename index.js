@@ -48,8 +48,10 @@ console.log(monthlyRate());
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
 
-
-
+function mortgageCalculator() {
+    console.log(`${name}, your monthly rate is ` + monthlyRate());
+} 
+mortgageCalculator();
 
 
 // 🏡 Task 4: Arguments and Parameters
