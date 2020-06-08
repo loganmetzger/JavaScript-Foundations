@@ -48,7 +48,11 @@ console.log(monthlyRate());
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
 
-console.log(name + `, your monthly interest rate is ` + monthlyRate());
+function mortgageCalculator(name, monthlyRate) {
+    return `${name}, your monthly rate is ${monthlyRate}`
+}
+
+console.log(mortgageCalculator('Logan', monthlyRate));
 
 // 🏡 Task 4: Arguments and Parameters
 /* Substitute the variables in your functions for parameters such that you can substitute `P`, `I`, and `N` when you call the function.
@@ -103,9 +107,13 @@ For example, variableInterestRate(200000, 0.04, 30) should console.log:
 "{Name}, with an interest rate of 0.06, your monthly rate is $1199"
 */
 
-for (I = 0.02, I > 0.06, I + 0.005) {
-    console.log(name + `, with an interest rate of ` I `your monthly rate is $` + parameterRate(200000, I, 360));
+let variableInterestRate = function(P, I, N) {
+    for (let i = 0; i < 10; i++) {
+        console.log(name +', with an interest rate of ' + I + ', your monthly rate is ' + monthlyRate(200000, 0.05, 30))
+        I+= 0.05;
+    }
 }
+variableInterestRate(200000, 0.04, 30);
 
 
 // 🌟🌟🌟 STRETCH 🌟🌟🌟//
